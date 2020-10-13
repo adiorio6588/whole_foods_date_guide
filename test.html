@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My First Paragraph.</p>
+
+<p id="demo"></p>
+
+<script>
+
+var someDate = new Date();
+var numberOfDaysToAdd = 6;
+someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
+
+var dd = someDate.getDate();
+var mm = someDate.getMonth() + 1;
+var y = someDate.getFullYear();
+
+var someFormattedDate = mm + '/'+ dd + '/'+ y;
+
+
+document.getElementById("demo").innerHTML = someFormattedDate;
+
+</script>
+
+</body>
+</html> 
